@@ -1,0 +1,36 @@
+.work-container {
+    display: flex;
+    gap: 30px;
+}
+
+.wtitle {
+    margin-bottom: 10px;
+}
+.wtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+}
+
+.quality {
+    background-color: var(--second-bg);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.quality-icon {
+    width: 70px;
+    height: 70px;
+}

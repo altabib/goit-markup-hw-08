@@ -1,0 +1,40 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigator {
+    margin-right: auto;
+}
+
+.navlist {
+    font-weight: 500;
+    color: var(--main-color-text);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--accent-color-text);
+        }
+}
+.navigator-list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigator-list>li {
+    margin-right: 50px;
+}
+
+.navigator-list>li:last-child {
+    margin-right: 0;
+}
+
+// .main-nav {
+//     align-items: center;
+//     display: flex;
+// }
