@@ -49,6 +49,19 @@
 .container-portfolio {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+@media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
 }
 
 .filter-link:last-child {
@@ -56,8 +69,10 @@
 }
 
 .portfolio-link {
-    margin-right: 29px;
-    margin-bottom: 29px;
+    @media screen and (min-width: 768px) {
+    -ms-flex-preferred-size: calc((100% - 30px)/2);
+    flex-basis: calc(100% / 2 - 15px);
+}
 }
 
 .portfolio-link:nth-child(3n) {
@@ -80,9 +95,29 @@
 
 .filter-nav {
     display: flex;
-    justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px){
+            row-gap: 15px;
+            -webkit-column-gap: 8px;
+            -moz-column-gap: 8px;
+            column-gap: 8px;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            max-width: 400px;
+            width: 100%;
 }
+    @media screen and (min-width: 768px){
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-bottom: 30px;
+} 
+}
+
 
 .our-work {
     text-decoration: none;

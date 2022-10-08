@@ -23,11 +23,16 @@
   </head>
 
   <body>
+
     <!--Header-->
-    <header>
-      <div class="container main-nav">
-        <a href="./index.html" class="logo link"><span class="logo-first"> Web</span>Studio</a>
-        <nav class="navigator">
+    <header class="header">
+      <div class="container main-nav"> 
+
+        <a href="./index.html" class="logo link">
+          <span class="logo-first"> Web</span>Studio</a>
+    
+        <div class="mobile-menu js-menu-container"  id="mobile-menu">
+        <nav class="navigator" >
           <ul class="list navigator-list">
             <li><a href="./index.html" class="navlist link current">Студия</a></li>
             <li><a href="./portfolio.html" class="navlist link">Портфолио</a></li>
@@ -46,9 +51,26 @@
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11</a
-          >
+          > 
         </div>
+         <ul class="mobile-icon">
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Instagram</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Twitter</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Facebook</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Linkedin</a></li>
+        </ul>
+        </div>
+
+        <button class="menu-button js-open-menu" type="button" 
+    aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-icon" width="24" height="24" aria-label="mobile menu switch">
+        <use class="icon-menu" Href="./img/symbol-defs.svg#icon-menu_24px"></use>
+        <use class="icon-close" Href="./img/symbol-defs.svg#icon-close_24px"></use>
+      </svg>
+        </button>
+
       </div>
+
     </header>
     <main>
       <!--Hero-->
@@ -575,7 +597,7 @@
         </div>
       </div>
     </footer>
-    <!--Modal window-->
+    <!--Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -583,7 +605,6 @@
             <use href="./img/symbol-defs.svg#icon-Modal-Close"></use>
           </svg>
         </button>
-
         <strong class="modal-header">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form">
           <!--Name input-->
@@ -635,5 +656,14 @@
       </div>
     </div>
     <script src="./JS/modal.js"></script>
+   
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

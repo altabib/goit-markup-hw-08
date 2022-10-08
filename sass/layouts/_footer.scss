@@ -2,10 +2,49 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.address-blok {
+    text-align: center;
+    margin-right: 0px;
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        margin-bottom: 0;
+        text-align: start;
+        }
+}
 
 .footer-items {
+    @media screen and (min-width: 768px) {
     display: flex;
+    -webkit-box-align: baseline;
     align-items: baseline;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+@media screen and (min-width: 1200px){
+flex-wrap: nowrap;
+}
+}
+.social-footer {
+    margin-top: 60px;
+    text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        text-align: start;
+    }
+}
+.subscribe-group {
+    text-align: center;
+    @media screen and (min-width: 1200px){
+    text-align: start;
+    }
 }
 
 .address {
@@ -22,6 +61,7 @@
 
 .logo link second {
     margin-left: 215px;
+
 }
 
 .footer-address {
@@ -52,8 +92,6 @@
         }
 }
 
-
-
 .footer-li {
     margin-bottom: 9px;
 }
@@ -64,6 +102,10 @@
 
 .footer-list {
     display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .footer-header {
@@ -74,11 +116,9 @@
     letter-spacing: 0.03em;
     color: var(--three-color-text);
     margin-bottom: 20px;
-}
-
-.address-blok {
-    margin-right: 70px;
-
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .footer-icon {
@@ -103,11 +143,15 @@
     margin-right: 10px;
 }
 
-.social-footer {
-    margin-right: auto;
-}
+
+
 .footer-form {
-    display: flex;
+    display: block;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        display: -webkit-box;
+        flex-wrap: nowrap;
+    }
 }
 
 .mail-subscribe {
@@ -132,6 +176,12 @@
     &:focus {
             border: 1px solid var(--three-color-text);
         }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        }
 }
 
 
@@ -142,7 +192,6 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-
 }
 
 .subscribe-btn {
@@ -173,6 +222,13 @@
     &:hover,
     &:focus {
             background-color: var(--six-bg);
+        }
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
         }
 }
 

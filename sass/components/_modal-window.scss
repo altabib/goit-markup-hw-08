@@ -15,15 +15,14 @@
     opacity: 0;
     pointer-events: none;
 }
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
     padding: 40px;
-
-    min-height: 581px;
-    min-width: 528px;
 
     background-color: var(--three-color-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,7 +31,15 @@
     animation-name: animatemodal;
     animation-duration: 3000ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-delay: 250ms;
-    animation-iteration-count: 2;
-
+    animation-delay: 1000ms;
+    animation-iteration-count: 1;
+    @media screen and (min-width: 480px) {
+        max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+    }
+    
 }
+
+ 

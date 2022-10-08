@@ -1,29 +1,52 @@
-.hdcontact {
+.header {
+    position: relative;
+}
+
+.header {
     font-weight: 500;
     color: var(--second-color-text);
     margin-right: 50px;
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:last-child {
-        margin-right: 0;
+    margin-right: 0;
     }
 
     &:hover,
     &:focus {
             color: var(--accent-color-text);
         }
+    @media screen and (min-width: 768px) {
+        gap: 10px;
+        margin-left: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        }
 }
+
 
 .contact-icon {
     margin-right: 10px;
     fill: currentColor;
 }
-.contact-header {
-    display: flex;
-}
+
 
 // portfolio
 .head-portfolio {
     border-bottom: 1px solid var(--first-bord);
 }
+
+// .mobile-icon {
+//     display: none;
+
+// @media screen and (max-width: 767px)  {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     gap: 10px;
+// }
+// }

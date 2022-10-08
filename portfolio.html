@@ -22,31 +22,51 @@ rel="stylesheet"/>
 <body>
      <!--Header-->
      <header class="head-portfolio">
-      <div class="container main-nav">
-  <a href="./index.html" class="logo link"><span class="logo-first">
-    Web</span>Studio</a>
-  <nav class="navigator">
-    <ul class="list navigator-list">
-      <li><a href="./index.html" class="navlist link">Студия</a></li>
-      <li><a href="./portfolio.html" class="navlist link current">Портфолио</a></li>
-      <li><a href="./index.html" class="navlist link">Контакты</a></li>
-    </ul>
-  </nav>
-  <div class="contact-header">
+      <div class="container main-nav"> 
+
+         <a href="./index.html" class="logo link">
+          <span class="logo-first"> Web</span>Studio</a>
+
+    <button class="menu-button js-open-menu" type="button" aria-label="mobile menu switch" 
+    aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="40" hight="40" >
+        <use class="icon-menu" Href="./img/symbol-defs.svg#icon-menu"></use>
+        <use class="icon-close" Href="./img/symbol-defs.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    
+        <div class="mobile-menu js-menu-container">
+        <nav class="navigator" >
+          <ul class="list navigator-list">
+            <li><a href="./index.html" class="navlist link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="navlist link">Портфолио</a></li>
+            <li><a href="./index.html" class="navlist link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contact-header">
           <a href="mailto:info@devstudio.com" class="hdcontact link first-link"
             ><svg class="contact-icon" width="16" height="12">
               <use href="./img/symbol-defs.svg#icon-mail"></use></svg>
             info@devstudio.com
           </a>
 
-          <a href="tel:+380961111111" class="hdcontact link">
-            <svg class="contact-icon" width="10" height="16">
+          <a href="tel:+380961111111" class="hdcontact link"
+            ><svg class="contact-icon" width="10" height="16">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11</a
           >
+          
         </div>
-</div>
+         <ul class="mobile-icon">
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Instagram</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Twitter</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Facebook</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Linkedin</a></li>
+        </ul>
+        </div>
+
+      </div>
 </header>
 <main>
       <section class="main">
@@ -358,5 +378,13 @@ rel="stylesheet"/>
         </div>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

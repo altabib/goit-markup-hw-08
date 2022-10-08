@@ -1,18 +1,38 @@
 .work-container {
-    display: flex;
-    gap: 30px;
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
-.wtitle {
-    margin-bottom: 10px;
+.list-item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    }
 }
+    
 .wtitle {
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
 .subtitle {
     font-weight: 400;
     line-height: 1.71;
@@ -21,6 +41,8 @@
 }
 
 .quality {
+    display: flex;
+    justify-content: center;    
     background-color: var(--second-bg);
     padding-left: 100px;
     padding-right: 100px;
@@ -34,3 +56,4 @@
     width: 70px;
     height: 70px;
 }
+ 

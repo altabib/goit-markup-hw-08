@@ -1,5 +1,14 @@
 .doing {
     padding-top: 0px;
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+    display: block;
+}
+}
+
+.doing__item {
+    position: relative;
 }
 
 .doing__text {
@@ -22,6 +31,3 @@
     gap: 30px;
 }
 
-.doing__item {
-    position: relative;
-}
