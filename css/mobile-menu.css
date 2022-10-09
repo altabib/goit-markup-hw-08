@@ -29,14 +29,14 @@
   cursor: pointer;
 }
 
-.menu-button.icon-close {
-  display: none;
-}
+/*.menu-button.icon-close {*/
+/*  display: none;*/
+/*}*/
 
-.menu-button.is-open.icon-close {
-  display: block;
-}
+/*.menu-button.is-open.icon-close {*/
+/*  display: block;*/
+/*}*/
 
-.menu-button.is-open.icon-menu {
-  display: none;
-}/*# sourceMappingURL=mobile-menu.css.map */
+/*.menu-button.is-open.icon-menu {*/
+/*  display: none;*/
+/*}!*# sourceMappingURL=mobile-menu.css.map *!*/

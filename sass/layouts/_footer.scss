@@ -159,8 +159,8 @@ flex-wrap: nowrap;
     padding-right: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 358px;
-    margin-right: 12px;
+    width: 100%;
+    // margin-right: 12px;
 
     background-color: transparent;
 
@@ -176,6 +176,10 @@ flex-wrap: nowrap;
     &:focus {
             border: 1px solid var(--three-color-text);
         }
+
+    @media screen and (min-width: 768px) {
+        width: 358px;
+    }
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;

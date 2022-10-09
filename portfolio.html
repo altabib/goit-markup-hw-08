@@ -20,26 +20,25 @@ rel="stylesheet"/>
 
   </head>
 <body>
-     <!--Header-->
-     <header class="head-portfolio">
+    <!--Header-->
+    <header class="header">
       <div class="container main-nav"> 
 
-         <a href="./index.html" class="logo link">
+        <a href="./index.html" class="logo link">
           <span class="logo-first"> Web</span>Studio</a>
-
-    <button class="menu-button js-open-menu" type="button" aria-label="mobile menu switch" 
-    aria-expanded="false" aria-controls="mobile-menu">
-      <svg width="40" hight="40" >
-        <use class="icon-menu" Href="./img/symbol-defs.svg#icon-menu"></use>
-        <use class="icon-close" Href="./img/symbol-defs.svg#icon-menu-close"></use>
-      </svg>
-    </button>
     
         <div class="mobile-menu js-menu-container">
+            <button class="menu-button js-close-menu" type="button"
+                  aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-icon" width="19" height="19" aria-label="mobile menu switch">
+              <use class="icon-close" Href="./img/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+
         <nav class="navigator" >
           <ul class="list navigator-list">
-            <li><a href="./index.html" class="navlist link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="navlist link">Портфолио</a></li>
+            <li><a href="./index.html" class="navlist link">Студия</a></li>
+            <li><a href="./portfolio.html" class="navlist link current">Портфолио</a></li>
             <li><a href="./index.html" class="navlist link">Контакты</a></li>
           </ul>
         </nav>
@@ -47,27 +46,34 @@ rel="stylesheet"/>
           <a href="mailto:info@devstudio.com" class="hdcontact link first-link"
             ><svg class="contact-icon" width="16" height="12">
               <use href="./img/symbol-defs.svg#icon-mail"></use></svg>
-            info@devstudio.com
+              info@devstudio.com
           </a>
 
-          <a href="tel:+380961111111" class="hdcontact link"
+          <a href="tel:+380961111111" class="hdcontact link second-link"
             ><svg class="contact-icon" width="10" height="16">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
             +38 096 111 11 11</a
-          >
-          
+          > 
         </div>
-         <ul class="mobile-icon">
-          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Instagram</a></li>
-          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Twitter</a></li>
-          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Facebook</a></li>
-          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link">Linkedin</a></li>
+         <ul class="mobile-icon list">
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link link">Instagram</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link link">Twitter</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link link">Facebook</a></li>
+          <li class="mobile-icon__list"><a href="#" class="mobile-icon__link link">Linkedin</a></li>
         </ul>
         </div>
 
+        <button class="menu-button js-open-menu" type="button" 
+    aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-icon" width="24" height="24" aria-label="mobile menu switch">
+        <use class="icon-menu" Href="./img/symbol-defs.svg#icon-menu_24px"></use>
+      </svg>
+        </button>
+
       </div>
-</header>
+
+    </header>
 <main>
       <section class="main">
         <div class="container">
@@ -87,13 +93,20 @@ rel="stylesheet"/>
           <li class="portfolio-link">
             <a href="" class="our-work">
             <div class="hidden-image-text">
-              <img
-              class="image-portfolio"
-              src="./img/img-portfolio/img.png"
-              alt="фото ноутбука"
-              width="370"
-              height="294"
-            />
+ <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-1-m@1x.png 1x, ./img/img-portfolio\Port/imgport-1-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-1-d@1x.jpg 1x, ./img/img-portfolio\Port/imgport-1-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-1-t@1x.jpg 1x, ./img/img-portfolio\Port/imgprof-1-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./im/\img-portfolio/Port/imgport-1-m@1x.png"
+              alt="фото ноутбука"/>
+    </picture>  
+              
               <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -109,13 +122,21 @@ rel="stylesheet"/>
           
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(1).png"
-              alt="баскетболісти"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+              <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-2-m@1x.png 1x, ./img/img-portfolio/Port/imgport-2-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-2-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-2-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof2-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-2-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Portimgport-2-m@1x.png"
+             alt="баскетболісти"/>
+    </picture>  
+             
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -130,13 +151,19 @@ rel="stylesheet"/>
           <li class="portfolio-link">
             <a href="" class="our-work">
             <div class="hidden-image-text">
-              <img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(2).png"
-              alt="назва ресторану seafood"
-              width="370"
-              height="294"
-            />
+    <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio\Port/imgport-3-m@1x.png 1x, ./img/img-portfolio/Port/imgport-3-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio\Port/imgport-3-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-3-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio\Port/imgprof-3-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-3-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-3-m@1x.png"
+               alt="назва ресторану seafood"/>
+    </picture>  
             <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -151,13 +178,21 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(3).png"
-              alt="навушники"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+              <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-4-m@1x.png 1x, ./img/img-portfolio/Port/imgport-4-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-4-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-4-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-4-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-4-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-4-m@1x.png"
+               alt="навушники"/>
+    </picture>  
+              
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -171,13 +206,21 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(4).png"
-              alt="дві коробки"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+              <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-5-m@1x.png 1x, ./img/img-portfolio/Port/imgport-5-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-5-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-5-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-5-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-5-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-5-m@1x.png"
+              alt="дві коробки"/>
+    </picture>  
+
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -191,13 +234,22 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(5).png"
-              alt="монітор"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+                   <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-6-m@1x.jpg 1x, ./img/img-portfolio/Port/imgport-6-m@2x.jpg 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-6-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-6-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-6-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-6-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-6-m@1x.jpg"
+             alt="монітор"/>
+    </picture>  
+              
+            
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -211,13 +263,21 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(6).png"
-              alt="розгорнута книга"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+                          <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-7-m@1x.jpg 1x, ./img/img-portfolio/Port/imgport-7-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-7-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-7-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-7-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-7-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-7-m@1x.jpg"
+             alt="розгорнута книга"/>
+    </picture>  
+             
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -231,13 +291,21 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(7).png"
-              alt="етикетка"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+                <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-8-m@1x.jpg 1x, ./img/img-portfolio/Port/imgport-8-m@2x.png 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-8-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-8-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-8-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-8-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-8-m@1x.jpg"
+            alt="етикетка"/>
+    </picture>  
+              
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -251,13 +319,21 @@ rel="stylesheet"/>
           </li>
           <li class="portfolio-link">
             <a href="" class="our-work">
-            <div class="hidden-image-text"><img
-              class="image-portfolio"
-              src="./img/img-portfolio/img-(8).png"
-              alt="друк на ноутбуці"
-              width="370"
-              height="294"
-            />
+            <div class="hidden-image-text">
+              <picture>
+      <source media="(max-width: 767px)"
+              srcset="./img/img-portfolio/Port/imgport-9-m@1x.jpg 1x, ./img/img-portfolio/Port/imgport-9-m@2x.jpg 2x"/> 
+
+      <source media="(min-width: 1200px)"
+              srcset="./img/img-portfolio/Port/imgport-9-d@1x.jpg 1x, ./img/img-portfolio/Port/imgport-9-d@2x.jpg 2x"/>
+
+      <source media="(min-width: 768px)"
+              srcset="./img/img-portfolio/Port/imgprof-9-t@1x.jpg 1x, ./img/img-portfolio/Port/imgprof-9-t@2x.jpg 2x"/>
+       
+              <img class="image-portfolio" src="./img/img-portfolio/Port/imgport-9-m@1x.jpg"
+            alt="друк на ноутбуці"/>
+    </picture>  
+             
           <p class="hidden-text">Ресурс пропонує комплексні пропозиції з 
             різним рівнем функціоналу та сервісів. 
             Все це дозволить відвідувачу отримати 
@@ -364,7 +440,7 @@ rel="stylesheet"/>
         </div>
         <!--Footer-Form-->
         <div class="subscribe-group">
-        <h2 class="footer-header">Подпишитесь на рассылку</h2>
+        <p class="footer-header">Подпишитесь на рассылку</p>
         <form class="footer-form">
           <label>
             <input class="mail-subscribe" type="mail" name="mail-subscribe" placeholder="E-mail" required>

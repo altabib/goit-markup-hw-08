@@ -5,7 +5,6 @@
 .header {
     font-weight: 500;
     color: var(--second-color-text);
-    margin-right: 50px;
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,14 +38,3 @@
 .head-portfolio {
     border-bottom: 1px solid var(--first-bord);
 }
-
-// .mobile-icon {
-//     display: none;
-
-// @media screen and (max-width: 767px)  {
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     gap: 10px;
-// }
-// }

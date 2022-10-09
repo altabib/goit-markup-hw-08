@@ -1,32 +1,28 @@
-.logo link {
-    margin-right: 93px;
-}
-
 .first-link {
-    margin-right: 50px;
     display: block;
 }
 
 .logo {
+    margin-right: 88px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
-    
     animation-name: animatelogo;
     animation-duration: 3000ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-delay: 1000ms;
 
-    @media screen and (min-width: 768px) {
-        margin-right: 88px;
-    }
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         font-size: 26px;
         line-height: 1.19;
+    }
+
+    &.second {
+        margin-right: 0;
     }
 }
 
