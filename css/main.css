@@ -104,7 +104,6 @@ address {
 }
 
 .container {
-  width: 290px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -112,7 +111,7 @@ address {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -238,41 +237,43 @@ address {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/Header/ img_mob@1x.png");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/Header/ img_mob@1x.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/img1bgm@1x.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/img1bgm@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
-  height: 600px;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/Img-bgr/bgr/Header/ img_mob@2x.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/img1bgm@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/img1bgm@2x.png");
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/Header img_gm-1-t@1x.png");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/Header img_gm-1-t@1x.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/img2bg@1x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/img2bg@1x.png");
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/Img-bgr/bgr/Header img_gm-1-t@2x.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/img2bg@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/img2bg@2x.png");
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/Imgbg-1-d@1x.png");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/Imgbg-1-d@1x.png");
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/Img-bgr/bgr/Imgbg-1-d@2x.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Img-bgr/bgr/Imgbg-1-d@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img-bgr/bgr/Imgbg-1-d@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -333,8 +334,8 @@ address {
   }
 }
 
-.list-item {
-  margin-bottom: 30px;
+.list-item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .list-item {
@@ -435,6 +436,9 @@ address {
   }
 }
 
+.team__list:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;
@@ -515,9 +519,6 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: flex;
   gap: 30px;
 }
@@ -528,14 +529,14 @@ address {
 }
 @media screen and (min-width: 768px) {
   .client__icon {
-    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-        flex-basis: calc(33.3333333333% - 30px);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .client__icon {
-    -ms-flex-preferred-size: calc(16.6666666667% - 30px);
-        flex-basis: calc(16.6666666667% - 30px);
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -613,6 +614,7 @@ address {
 .social-footer {
   margin-top: 60px;
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .social-footer {
@@ -688,7 +690,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 60px;
 }
 
 .footer-header {
@@ -746,7 +747,7 @@ address {
   }
 }
 
-.mail-subscribe {
+.email-subscribe {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 15px;
@@ -760,16 +761,16 @@ address {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-subscribe:hover, .mail-subscribe:focus {
+.email-subscribe:hover, .email-subscribe:focus {
   border: 1px solid var(--three-color-text);
 }
 @media screen and (min-width: 768px) {
-  .mail-subscribe {
+  .email-subscribe {
     width: 358px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .mail-subscribe {
+  .email-subscribe {
     width: 358px;
     margin-right: 12px;
     margin-top: 0;
@@ -777,35 +778,35 @@ address {
   }
 }
 
-.mail-subscribe::-webkit-input-placeholder {
+.email-subscribe::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail-subscribe::-moz-placeholder {
+.email-subscribe::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail-subscribe:-ms-input-placeholder {
+.email-subscribe:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail-subscribe::-ms-input-placeholder {
+.email-subscribe::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail-subscribe::placeholder {
+.email-subscribe::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;

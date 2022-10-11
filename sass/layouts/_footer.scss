@@ -34,7 +34,7 @@ flex-wrap: nowrap;
 .social-footer {
     margin-top: 60px;
     text-align: center;
-    
+    margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         text-align: start;
@@ -105,7 +105,7 @@ flex-wrap: nowrap;
     -webkit-box-pack: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 }
 
 .footer-header {
@@ -154,7 +154,7 @@ flex-wrap: nowrap;
     }
 }
 
-.mail-subscribe {
+.email-subscribe {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 15px;
@@ -190,7 +190,7 @@ flex-wrap: nowrap;
 
 
 
-.mail-subscribe::placeholder {
+.email-subscribe::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
